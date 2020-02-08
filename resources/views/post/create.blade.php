@@ -6,18 +6,16 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h1 style="color: red">Create User</h1>
+                        <h1 style="color: red">Create Post</h1>
                     </div>
                     <div class="card-body">
-                        <form method="post" action="{{route('user.store')}}" enctype="multipart/form-data">
+                        <form method="post" action="{{route('post.store', $user->id)}}" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <label>Username:</label>
-                                <input type="text" class="form-control" placeholder="Enter Username" name="name">
-                                <label>Email:</label>
-                                <input type="text" class="form-control" placeholder="Enter Email" name="email">
-                                <label>Password:</label>
-                                <input type="password" class="form-control" placeholder="Enter Password" name="password">
+                                <label>Title: </label>
+                                <input type="text" class="form-control" placeholder="Enter Title" name="title">
+                                <label>Content: </label>
+                                <textarea type="text" class="form-control" placeholder="Noi dung bai viet" name="contents" style="height:300px; resize: none" ></textarea>
                             </div>
                             <button type="button" onclick="window.history.go(-1)" class="btn btn-secondary">Cancel</button>
                             <button type="submit" class="btn btn-success">Create</button>
@@ -28,3 +26,4 @@
         </div>
     </div>
 @endsection
+

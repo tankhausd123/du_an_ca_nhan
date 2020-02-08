@@ -4,15 +4,16 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <iframe src="https://corona.kompa.ai/" width="100%" height="100%" style="border:none;"></iframe>
                 <a href="{{route('user.create')}}">
                     <button type="button" class="btn btn-success">
                         <i class="fa fa-user-plus"></i>
                     </button>
                 </a>
-                <button type="button" class="btn btn-outline-primary">
-                    <i class="fa fa-plus"></i> New Post
-                </button>
+                <a href="{{route('post.create', Auth::user()->id)}}">
+                    <button type="button" class="btn btn-outline-primary">
+                        <i class="fa fa-plus"></i> New Post
+                    </button>
+                </a>
                 <table class="table table-hover table-dark">
                     <thead>
                     <tr>
@@ -29,9 +30,11 @@
                             <td>{{$listUsers->name}}</td>
                             <td>{{$listUsers->email}}</td>
                             <td>
-                                <button type="button" class="btn btn-primary">
-                                    <i class="fa fa-info-circle"></i>
-                                </button>
+                                <a href="{{route('user.info', $listUsers->id)}}">
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                </a>
                                 <a href="{{route('user.edit', $listUsers->id)}}">
                                     <button type="button" class="btn btn-warning">
                                         <i class="fa fa-edit"></i>

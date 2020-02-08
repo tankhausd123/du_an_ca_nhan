@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="357e7e49-173a-46a5-9550-aeb5ec9f5d29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Repository/Eloquent/RepositoryEloquent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Repository/Implement/PostRepositoryImplement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Repository/Implement/UserRepositoryImplement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Repository/RepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Service/Implement/PostServiceImplement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Service/Implement/UserServiceImplement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Service/ServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/post/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/post/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/info.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Service/Implement/PostServiceImplement.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Service/Implement/PostServiceImplement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +131,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog_travel" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -164,6 +161,8 @@
       <workItem from="1580703602615" duration="1346000" />
       <workItem from="1580712558581" duration="12759000" />
       <workItem from="1580796214971" duration="3573000" />
+      <workItem from="1580864273601" duration="389000" />
+      <workItem from="1581165592417" duration="11358000" />
     </task>
     <servers />
   </component>
@@ -175,18 +174,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="880" y="27" width="476" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.741@0.27.1366.741" timestamp="1580720841047" />
-    <state x="407" y="155" key="FileChooserDialogImpl" timestamp="1580809791668">
+    <state x="416" y="155" width="524" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581174755501">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="407" y="155" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1580809791667" />
+    <state x="416" y="155" width="524" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1581174755501" />
+    <state x="407" y="155" key="FileChooserDialogImpl" timestamp="1581166555413">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="407" y="155" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1581166555413" />
     <state x="325" y="213" width="806" height="386" key="NewPhpClassDialog" timestamp="1580725095917">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="325" y="213" width="806" height="386" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1580725095917" />
-    <state x="423" y="323" width="510" height="154" key="NewPhpFileDialog" timestamp="1580727799266">
+    <state x="423" y="323" width="510" height="154" key="NewPhpFileDialog" timestamp="1581175683767">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="423" y="323" width="510" height="154" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1580727799266" />
+    <state x="423" y="323" width="510" height="154" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1581175683767" />
     <state x="194" y="32" width="977" height="736" key="SettingsEditor" timestamp="1580710390550">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
