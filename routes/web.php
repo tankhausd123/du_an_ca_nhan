@@ -21,6 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::prefix('/user')->middleware('auth')->group(function (){
+    Route::get('/search}', 'UserController@search')->name('user.search');
     Route::get('/list', 'UserController@home')->name('home');
     Route::get('/create', 'UserController@create')->name('user.create');
     Route::post('/create', 'UserController@store')->name('user.store');

@@ -33,7 +33,7 @@ class PostController extends Controller
         $newPost->content = $request->contents;
         $newPost->user_id = $id;
         $newPost->save();
-        return redirect()->route('home');
+        return redirect()->route('user.info', compact('id'));
     }
     function edit($id)
     {
@@ -43,12 +43,15 @@ class PostController extends Controller
     function update(Request $request, $id)
     {
         $this->postServiceImplement->update($request, $id);
-        return redirect()->route('home');
+        $post = $this->postServiceImplement->findById($id);
+        $id = $post->user_id;
+        return redirect()->route('user.info', compact('id'));
     }
     function delete($id)
     {
         $post = $this->postServiceImplement->findById($id);
         $this->postServiceImplement->delete($post);
-        return redirect()->route('home');
+        $id = $post->user_id;
+        return redirect()->route('user.info', compact('id'));
     }
 }

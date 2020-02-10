@@ -44,4 +44,9 @@ class PostServiceImplement implements ServiceInterface
     {
         $this->postRepositoryImplement->delete($object);
     }
+
+    function findByName($keyword)
+    {
+        // TODO: Implement findByName() method.
+    }
 }

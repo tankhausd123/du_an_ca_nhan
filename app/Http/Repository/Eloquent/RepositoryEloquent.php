@@ -35,4 +35,8 @@ abstract class RepositoryEloquent implements RepositoryInterface
     {
         $object->delete();
     }
+    public function findByName($keyword)
+    {
+        return $this->model->where('name', 'LIKE', '%'.$keyword.'%')->get();
+    }
 }

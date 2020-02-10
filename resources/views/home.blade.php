@@ -4,6 +4,13 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
+                <form method="get" action="{{route('user.search')}}">
+                    @csrf
+                    <input placeholder="enter text" name="keyword">
+                    <button>
+                        search
+                    </button>
+                </form>
                 <a href="{{route('user.create')}}">
                     <button type="button" class="btn btn-success">
                         <i class="fa fa-user-plus"></i>

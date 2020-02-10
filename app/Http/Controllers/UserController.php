@@ -61,4 +61,10 @@ class UserController extends Controller
         $posts = Post::where('user_id', $user->id)->get();
         return view('user.info', compact('user', 'posts'));
     }
+    function search(Request $request)
+    {
+        $keyword = $request->keyword;
+        $listUser = $this->UserServiceImplement->findByName($keyword);
+        return view('home', compact('listUser'));
+    }
 }

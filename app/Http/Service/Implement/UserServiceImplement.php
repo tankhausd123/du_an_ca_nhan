@@ -48,4 +48,9 @@ class UserServiceImplement implements ServiceInterface
     {
         $this->UserRepositoryImplement->delete($object);
     }
+
+    function findByName($keyword)
+    {
+       return $this->UserRepositoryImplement->findByName($keyword);
+    }
 }
